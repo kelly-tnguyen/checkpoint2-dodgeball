@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="dodgeball-styles.css" />
+
   <title>Dodge Ball</title>
 </head>
 <body>
   <div>
       <h4>List Of People</h4>
       <ul id="people"></ul>
+      <button class='mainBtn' id='firstList' onclick="listPeopleChoices()">Applicants</button>
+      <ul id="people"></ul>
   </div>
   <button onclick="listPeopleChoices()">List People</button>
   <div>
       <h4>Dodge Ball Players</h4>
       <ul id="players"></ul>
+            <!-- onclick="showRegistered()" -->
+            <button class='mainBtn' id='secondList' onclick="playerList()">Players</button>
+            <ul id="players"></ul>
   </div>
   <div>
       <h4>Blue Team</h4>
+            <!-- onclick="warriorsList()" -->
+      <button class='mainBtn' id='warriorsBtn' onclick="warriorsList()">Meet The Warriors!</button>
       <ul id="blue"></ul>
   </div>
   <div>
       <h4>Red Team</h4>
+            <!-- onclick="rocketsList()" -->
+      <button class='mainBtn' id='rocketsBtn' onclick="rocketsList()">Meet The Rockets</button>
       <ul id="red"></ul>
   </div>
-  <script src='./main.js'></script>
+  <script src='dodgeball.js'></script>
 </body>
 </html>

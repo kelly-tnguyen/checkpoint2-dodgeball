@@ -1,0 +1,19 @@
+{
+  "name": "checkpoint2-dodgeball",
+  "version": "1.0.0",
+  "description": "20pts - Code Plan - Include this in a README.md file in your folder with comment in your code.",
+  "main": "dodgeball.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelly-tnguyen/checkpoint2-dodgeball.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelly-tnguyen/checkpoint2-dodgeball/issues"
+  },
+  "homepage": "https://github.com/kelly-tnguyen/checkpoint2-dodgeball#readme"
+}
