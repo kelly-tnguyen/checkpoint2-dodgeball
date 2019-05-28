@@ -184,13 +184,37 @@ const reset = () => {
 
 // Tests
 
+// Does the player have all the necessary parameters
+const assert = require('assert');
 if (typeof describe === 'function') {
-  describe('#makePlayer()', () => {
-    it('should add person to player array', () => {
-      makePlayer(4);
-      assert.equal(listOfPlayers.length, 1);
-    })
-  })
-} else {
-
+      describe('Player', function(){
+      it('can become a player', function(){
+        let player1 = new Player('2', 'Charles Young', '55', 'welding', 'Omaha, Nebraska');
+        assert.equal(player1.id, '2');
+        assert.equal(player1.name, 'Charles Young');
+        assert.equal(player1.age, '55');
+        assert.equal(player1.skillSet, 'welding');
+      });
+  });
 }
+      describe("Player", function() {
+        it("can join blue team", function() {
+          let player2 = new Player(2, "Jane Doe", 22, "snorkeler", "Houston");
+          player2 = new Team("NB", "Unicorn", "Blue");
+          assert.equal(player2.name, "NB");
+          assert.equal(player2.mascot, "Unicorn");
+          assert(!(player2 instanceof Player));
+          assert(player2 instanceof Team);
+        });
+      });
+
+      describe("Player", function() {
+        it("can join red team", function() {
+          let player3 = new Player(4, "Chris Jackson", 27, "comp sci", "San Marcos");
+          player3 = new Team("Canyon", "Cougar", "Red");
+          assert.equal(player3.name, "Canyon");
+          assert.equal(player3.mascot, "Cougar");
+          assert(!(player3 instanceof Player));
+          assert(player3 instanceof Team);
+        });
+      });
